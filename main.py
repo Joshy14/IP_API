@@ -5,6 +5,5 @@ ip = input("Enter IPadress for research: ")
 handler = ipinfo.getHandler(key)
 details = handler.getDetails(ip)
 map =  folium.Map(location=[details.latitude, details.longitude])
-map
 print('City: '+details.city)
 print('Coordinates: '+details.loc)
